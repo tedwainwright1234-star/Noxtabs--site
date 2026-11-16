@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noxtabs – night-time toothpaste tablets</title>
+<meta name="description" content="Noxtabs are quick toothpaste tablets for your bedside table. Launching 2027.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%23F2E6B8'/%3E%3Ccircle cx='22' cy='11' r='11' fill='%230B1026'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0B1026; color: #EEF1FA; font-family: Inter, system-ui, sans-serif; }
+  a { color: #7FE3C4; } a:hover { color: #B5F0DD; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 32px 0; }
+  .logo { display: flex; align-items: center; gap: 12px; font-family: Sora, Inter, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+  .badge { font-size: 14px; color: #A9B1D0; border: 1px solid #2A3360; border-radius: 999px; padding: 8px 16px; }
+  .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 48px; padding: 72px 0 96px; }
+  .hero-text { flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+  .eyebrow { margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #7FE3C4; }
+  h1 { margin: 0; font-family: Sora, Inter, sans-serif; font-size: clamp(40px, 6vw, 68px); line-height: 1.05; font-weight: 700; letter-spacing: -1.5px; }
+  .lead { margin: 0; font-size: 19px; line-height: 1.6; color: #C7CDE6; max-width: 560px; }
+  form { display: flex; flex-direction: column; gap: 10px; max-width: 520px; margin-top: 8px; }
+  label { font-size: 15px; font-weight: 500; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; }
+  input { flex: 1 1 260px; min-width: 0; height: 52px; padding: 0 18px; font: 16px Inter, sans-serif; color: #EEF1FA; background: #141B3A; border: 1px solid #2A3360; border-radius: 12px; }
+  input::placeholder { color: #8C95B8; }
+  button { height: 52px; padding: 0 26px; font: 600 16px Inter, sans-serif; color: #0B1026; background: #7FE3C4; border: 0; border-radius: 12px; cursor: pointer; }
+  .thanks { display: none; margin: 0; padding: 16px 18px; font-size: 16px; color: #0B1026; background: #7FE3C4; border-radius: 12px; }
+  .small { margin: 0; font-size: 13px; color: #A9B1D0; }
+  .art { flex: 1 1 320px; min-width: 0; display: flex; justify-content: center; }
+  .moon { width: 340px; max-width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; background: #141B3A; display: flex; align-items: center; justify-content: center; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; padding-bottom: 96px; }
+  .card { background: #141B3A; border: 1px solid #222A52; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+  .card h2 { margin: 0; font-family: Sora, Inter, sans-serif; font-size: 20px; font-weight: 600; }
+  .card p { margin: 0; font-size: 16px; line-height: 1.6; color: #C7CDE6; }
+  footer { border-top: 1px solid #222A52; padding: 32px 0 48px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #A9B1D0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="logo">
+    <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="#F2E6B8"/><circle cx="22" cy="11" r="11" fill="#0B1026"/></svg>
+    <span>noxtabs</span>
+  </div>
+  <span class="badge">Launching 2027</span>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Night-time toothpaste tablets</p>
+    <h1>Clean teeth.<br>Back to sleep.</h1>
+    <p class="lead">Noxtabs are quick toothpaste tablets that live on your bedside table, for the moments in the night when you've had something sweet and a full brush feels like too much. Made first for people who treat lows at night.</p>
+
+    <form id="signup">
+      <label for="email">Be first to know when we launch</label>
+      <div class="row" id="signup-row">
+        <input id="email" name="email" type="email" required placeholder="you@example.com">
+        <button type="submit">Join the list</button>
+      </div>
+      <p class="thanks" id="thanks">Thanks, you're on the list. We'll be in touch before launch.</p>
+      <p class="small">No spam. Just launch news and early access.</p>
+    </form>
+  </div>
+
+  <div class="art">
+    <div class="moon">
+      <svg width="200" height="200" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="78" fill="#F2E6B8"/>
+        <circle cx="138" cy="72" r="70" fill="#141B3A"/>
+        <circle cx="150" cy="150" r="5" fill="#7FE3C4"/>
+        <circle cx="168" cy="120" r="3" fill="#EEF1FA"/>
+        <circle cx="40" cy="36" r="3" fill="#EEF1FA"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7FE3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <h2>Made for the middle of the night</h2>
+    <p>Designed around the 3am moment, so looking after your teeth doesn't have to wait until morning.</p>
+  </div>
+  <div class="card">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7FE3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="7" width="14" height="14" rx="3"/><path d="M8 7V4h8v3"/></svg>
+    <h2>Lives by your bed</h2>
+    <p>A small jar next to your glucose tablets. No tube, no mess, no trip to the bathroom light.</p>
+  </div>
+  <div class="card">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7FE3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>
+    <h2>Made to UK standards</h2>
+    <p>Formulated and safety-assessed to UK cosmetics rules before anything goes on sale.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>Always treat a hypo first and follow your diabetes care plan. Noxtabs are not a medicine.</span>
+  <span><a href="mailto:hello@noxtabs.co.uk">hello@noxtabs.co.uk</a> · © 2026 Noxtabs</span>
+</footer>
+
+</div>
+
+<script>
+  // Sign-up: until a mailing-list service is connected, this opens an email to you.
+  // To connect one later (e.g. Formspree), paste its form address between the quotes.
+  var FORM_ENDPOINT = "";
+  var CONTACT_EMAIL = "hello@noxtabs.co.uk";
+
+  document.getElementById("signup").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var email = document.getElementById("email").value;
+    function done() {
+      document.getElementById("signup-row").style.display = "none";
+      document.getElementById("thanks").style.display = "block";
+    }
+    if (FORM_ENDPOINT) {
+      fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Accept": "application/json", "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email })
+      }).then(done).catch(done);
+    } else {
+      window.location.href = "mailto:" + CONTACT_EMAIL +
+        "?subject=" + encodeURIComponent("Add me to the Noxtabs list") +
+        "&body=" + encodeURIComponent("Please add " + email + " to the Noxtabs launch list.");
+      done();
+    }
+  });
+</script>
+</body>
+</html>
